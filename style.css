@@ -1,0 +1,106 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html,
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 600px;
+  margin: 30px auto;
+  border-radius: 30px;
+  background: #3d405b;
+  padding: 30px;
+}
+
+
+.nav-btn1 {
+  background: none;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.nav-btn2 {
+  background: none;
+  width: 30px;
+  height: 30px;
+  background: orange;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.nav-btn3 {
+  background: none;
+  width: 30px;
+  height: 30px;
+  background: green;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.btn-row button {
+  background: none;
+  border: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* 모든 버튼에 공통 hover, active 효과 */
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+.btn-row {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+}
+
+.btn-row .orange {
+    background: orange;
+    color: black;
+}
+
+.btn-row .light-gray {
+    background: lightgray;
+    color: black;
+}
+
+.btn-row .dark-gray {
+    background: darkgray;
+    color: black;
+}
+
+/*.btn.zero {*/
+/*  grid-column: span 2;*/
+/*  border-radius: 50px;*/
+/*}*/
+.screen {
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.35);
+  height: 100px;
+  margin-bottom: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  font-size: 5rem;
+}
